@@ -36,7 +36,7 @@ export function subjectDir(subjectRel) {
 }
 
 export function distDir(subjectRel) {
-  return path.join(ENGINE_ROOT, 'dist', subjectRel);
+  return path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist', subjectRel);
 }
 
 export function subjectHasLectures(subjectRel) {

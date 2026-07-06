@@ -167,7 +167,7 @@ async function main() {
 </body>
 </html>`;
 
-  const dest = path.join(ENGINE_ROOT, 'dist', 'admin');
+  const dest = path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist', 'admin');
   const appSrc = path.join(ENGINE_ROOT, 'admin', 'app.js');
   await mkdir(dest, { recursive: true });
   await writeFile(path.join(dest, 'index.html'), html);

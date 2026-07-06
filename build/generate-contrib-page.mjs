@@ -336,7 +336,7 @@ async function main() {
 </body>
 </html>`;
 
-  const outDir = path.join(ENGINE_ROOT, 'dist', 'contrib');
+  const outDir = path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist', 'contrib');
   await mkdir(outDir, { recursive: true });
   await writeFile(path.join(outDir, 'index.html'), html);
   console.log(`✓ dist/contrib/index.html (${subjects.length} subject(s), ${years.length} year(s))`);

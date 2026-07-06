@@ -65,7 +65,7 @@ async function main() {
   }
 
   const subjectRel = subject ? subject.replace(/^subjects\//, '') : null;
-  const outDir = all ? path.join(ENGINE_ROOT, 'dist') : path.join(ENGINE_ROOT, 'dist', subjectRel);
+  const outDir = all ? path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist') : path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist', subjectRel);
 
   await build(all, subject);
 

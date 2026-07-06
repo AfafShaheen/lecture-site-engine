@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 const ENGINE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ADMIN_SRC = path.join(ENGINE_ROOT, 'admin');
-const ADMIN_DEST = path.join(ENGINE_ROOT, 'dist', 'admin');
+const ADMIN_DEST = path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist', 'admin');
 
 async function main() {
   if (!existsSync(path.join(ADMIN_SRC, 'index.html'))) {

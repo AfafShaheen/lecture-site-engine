@@ -93,7 +93,7 @@ async function main() {
   await ensureSubjectScaffold(subjectRel);
   const outDir = args.output
     ? path.resolve(process.cwd(), args.output)
-    : path.join(ENGINE_ROOT, 'dist', subjectRel);
+    : path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist', subjectRel);
 
   const guide = await loadGuideConfig(subjectDir);
   const parser = createParser({

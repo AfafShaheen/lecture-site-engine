@@ -1,13 +1,13 @@
 {
   "settings": {
-    "subjectName": "نظم موزعة (نظري)",
-    "subjectNameEn": "Distributed Systems (Theory)",
+    "subjectName": "نظم موزعة",
+    "subjectNameEn": "Distributed Systems",
     "year": "2025-2026",
     "academicYear": 5,
     "theme": "amber-default",
-    "department": "نظري"
+    "department": "تصميم"
   },
-  "title": "نظم موزعة (نظري) — Distributed Systems (Theory)",
+  "title": "نظم موزعة — Distributed Systems",
   "subtitle": "مفاهيم وتصميم الأنظمة الموزعة",
   "files": [],
   "lectureIcons": [

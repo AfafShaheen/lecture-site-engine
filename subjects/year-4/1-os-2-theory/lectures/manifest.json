@@ -5,7 +5,8 @@
     "year": "2025-2026",
     "academicYear": 4,
     "theme": "parallel-teal",
-    "department": "القسم"
+    "department": "القسم",
+    "enabledLectures": true
   },
   "title": "1-os-2-theory — 1-os-2-theory",
   "subtitle": "دليل دراسي تفاعلي",

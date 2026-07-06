@@ -11,7 +11,7 @@ import { patchSubjectIndexHtml } from './patch-subject-index.mjs';
 async function listBuiltSubjects() {
   /** @type {string[]} */
   const found = [];
-  const distRoot = path.join(ENGINE_ROOT, 'dist');
+  const distRoot = path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist');
   if (!existsSync(distRoot)) return found;
 
   for (let y = 1; y <= 5; y++) {
@@ -32,7 +32,7 @@ async function listBuiltSubjects() {
  * @param {string} subjectRel
  */
 async function syncOne(subjectRel) {
-  const outDir = path.join(ENGINE_ROOT, 'dist', subjectRel);
+  const outDir = path.join(ENGINE_ROOT, process.env.OUTPUT_DIR || 'dist', subjectRel);
   const guidePath = path.join(outDir, 'js/guide-config.js');
   const guideBackup = existsSync(guidePath)
     ? await readFile(guidePath, 'utf8')
