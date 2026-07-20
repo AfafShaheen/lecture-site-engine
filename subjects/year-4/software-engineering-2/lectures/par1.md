@@ -28,7 +28,9 @@
 
 ---
 
-## 1. مقدمة: تطوّر البرمجيات وتعقيدها
+## الجزء الأول: الشرح التفصيلي
+
+### 1. مقدمة: تطوّر البرمجيات وتعقيدها
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", visualization: "hierarchy", coverage: "95%"} -->
 
@@ -113,7 +115,7 @@ graph TD
 
 ---
 
-## 2. أزمة البرمجيات (Software Crisis)
+### 2. أزمة البرمجيات (Software Crisis)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", visualization: "flowchart", coverage: "95%"} -->
 <!-- @connectivity: {prerequisite: "1"} -->
@@ -193,7 +195,7 @@ graph TD
 
 ---
 
-## 3. تكلفة البرمجيات (Software Costs)
+### 3. تكلفة البرمجيات (Software Costs)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", coverage: "100%"} -->
 <!-- @connectivity: {prerequisite: "2"} -->
@@ -265,7 +267,7 @@ graph LR
 
 ---
 
-## 4. تعريف هندسة البرمجيات (Software Engineering)
+### 4. تعريف هندسة البرمجيات (Software Engineering)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", coverage: "100%"} -->
 <!-- @connectivity: {prerequisite: "2,3"} -->
@@ -336,7 +338,7 @@ graph LR
 
 ---
 
-## 5. مهندس البرمجيات (Software Engineers)
+### 5. مهندس البرمجيات (Software Engineers)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", coverage: "100%"} -->
 <!-- @connectivity: {prerequisite: "4"} -->
@@ -404,7 +406,7 @@ graph TD
 
 ---
 
-## 6. البرمجيات، البرامج، والتوثيق (Software, Programs & Documentation)
+### 6. البرمجيات، البرامج، والتوثيق (Software, Programs & Documentation)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", visualization: "hierarchy", coverage: "95%"} -->
 <!-- @connectivity: {prerequisite: "4"} -->
@@ -485,7 +487,7 @@ graph TD
 
 ---
 
-## 7. منتجات البرمجيات: عام مقابل مخصص (Generic vs Bespoke Products)
+### 7. منتجات البرمجيات: عام مقابل مخصص (Generic vs Bespoke Products)
 <!-- @type: principle -->
 <!-- @render: {type: "diagram-first", visualization: "decision", coverage: "95%"} -->
 <!-- @connectivity: {prerequisite: "6"} -->
@@ -561,7 +563,7 @@ graph TD
 
 ---
 
-## 8. المنتج البرمجي: المكونات (Software Product Components)
+### 8. المنتج البرمجي: المكونات (Software Product Components)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", coverage: "100%"} -->
 <!-- @connectivity: {prerequisite: "7"} -->
@@ -637,7 +639,7 @@ graph TD
 
 ---
 
-## 9. أساطير البرمجيات الشائعة (Software Myths)
+### 9. أساطير البرمجيات الشائعة (Software Myths)
 <!-- @type: practice -->
 <!-- @render: {type: "diagram-first", coverage: "100%"} -->
 <!-- @connectivity: {prerequisite: "4"} -->
@@ -723,7 +725,7 @@ graph TD
 
 ---
 
-## 10. عملية البرمجيات وأنشطتها (Software Process & Activities)
+### 10. عملية البرمجيات وأنشطتها (Software Process & Activities)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", visualization: "flowchart", coverage: "100%"} -->
 <!-- @connectivity: {prerequisite: "9"} -->
@@ -799,7 +801,7 @@ graph LR
 
 ---
 
-## 11. خصائص البرمجيات وتطبيقاتها (Software Characteristics & Applications)
+### 11. خصائص البرمجيات وتطبيقاتها (Software Characteristics & Applications)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", coverage: "95%"} -->
 <!-- @connectivity: {prerequisite: "10"} -->
@@ -877,7 +879,7 @@ graph TD
 
 ---
 
-## 12. البرمجية الجيدة ومصطلحات هندسة البرمجيات (Good Software & Terminologies)
+### 12. البرمجية الجيدة ومصطلحات هندسة البرمجيات (Good Software & Terminologies)
 <!-- @type: fact -->
 <!-- @render: {type: "diagram-first", coverage: "90%"} -->
 <!-- @connectivity: {prerequisite: "11"} -->
@@ -968,7 +970,7 @@ graph TD
 
 ---
 
-## 13. دور الإدارة في تطوير البرمجيات (Role of Management in SD)
+### 13. دور الإدارة في تطوير البرمجيات (Role of Management in SD)
 <!-- @type: principle -->
 <!-- @render: {type: "diagram-first", visualization: "decision", coverage: "95%"} -->
 <!-- @connectivity: {prerequisite: "12"} -->
