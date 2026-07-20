@@ -549,16 +549,22 @@ export function createDefaultBlockHandlers() {
     {
       id: 'qa-card',
       priority: 64,
-      test: (ctx) => /^\*\*Q\d+:/i.test(ctx.trimmed),
+      test: (ctx) => /^\*\*Q\d+:\*\*/i.test(ctx.trimmed),
       parse: (ctx) => {
-        const qNum = ctx.trimmed.match(/^\*\*Q(\d+):/i)[1];
-        const qText = ctx.trimmed.replace(/^\*\*Q\d+:\s*/i, '').replace(/\*\*\s*$/, '').trim();
+        const qMatch = ctx.trimmed.match(/^\*\*Q(\d+):\*\*\s*(.*)$/i);
+        if (!qMatch) return null;
+        const qNum = qMatch[1];
+        const qText = qMatch[2].trim();
         let i = ctx.i + 1;
         while (i < ctx.lines.length && !ctx.lines[i].trim()) i++;
         let aText = '';
-        if (i < ctx.lines.length && /^A:\s*/i.test(ctx.lines[i].trim())) {
-          aText = ctx.lines[i].trim().replace(/^A:\s*/i, '');
-          i++;
+        if (i < ctx.lines.length) {
+          const aLine = ctx.lines[i].trim();
+          const aMatch = aLine.match(/^(?:\*\*)?A:\*\*\s*(.*)$/i) || aLine.match(/^A:\s*(.*)$/i);
+          if (aMatch) {
+            aText = aMatch[1].trim();
+            i++;
+          }
         }
         return { block: { type: 'qa-card', num: qNum, question: qText, answer: aText }, nextIndex: i };
       },
